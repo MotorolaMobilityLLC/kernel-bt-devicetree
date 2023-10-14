@@ -2,11 +2,20 @@ ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-bt.dtbo
 endif
 
+ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
+
+dtbo-$(CONFIG_ARCF_DTB) += pineapple-kiwi-bt-arcf-evt1a.dtbo
+dtbo-$(CONFIG_CTWOV_DTB) += pineapple-kiwi-bt-ctwov-evb.dtbo
+
+else
+
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
 dtbo-y += pineapple-hdk-kiwi-bt.dtbo
 dtbo-y += pineapple-aim500-kiwi-bt.dtbo
 endif
+
+endif  # end of CONFIG_MMI_DEVICE_DTBS
 
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
 dtbo-y += waipio-bt.dtbo
