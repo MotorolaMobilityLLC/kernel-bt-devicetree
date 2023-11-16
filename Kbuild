@@ -7,6 +7,9 @@ ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 dtbo-$(CONFIG_ARCF_DTB) += pineapple-kiwi-bt-arcf-evt1a.dtbo
 dtbo-$(CONFIG_CTWOV_DTB) += pineapple-kiwi-bt-ctwov-evb.dtbo
 
+dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-bt-arcfox-evt3.dtbo
+dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-bt-ctwo-evb3.dtbo
+
 else
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
