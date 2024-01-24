@@ -33,6 +33,10 @@ dtbo-y += cliffs-kiwi-bt.dtbo
 dtbo-y += cliffs-qca6750-bt.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += pitti-bt.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
