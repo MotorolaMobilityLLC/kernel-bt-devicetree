@@ -5,6 +5,7 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
 dtbo-y += pineapple-hdk-kiwi-bt.dtbo
+dtbo-y += pineapple-aim500-kiwi-bt.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
