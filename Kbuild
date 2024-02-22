@@ -5,6 +5,7 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
 dtbo-y += pineapple-hdk-kiwi-bt.dtbo
+dtbo-y += pineapple-aim500-kiwi-bt.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
@@ -30,6 +31,10 @@ endif
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-kiwi-bt.dtbo
 dtbo-y += cliffs-qca6750-bt.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += pitti-bt.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
