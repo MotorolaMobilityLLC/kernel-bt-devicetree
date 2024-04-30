@@ -11,7 +11,7 @@
 
                 qcom,bt-vdd-io-config = <1700000 2000000 1 0>;
                 qcom,bt-vdd-core-config = <0 0 1 0>;
-                qcom,bt-vdd-pa-config = <3000000 3544000 1 0>;
+                qcom,bt-vdd-pa-config = <3200000 3544000 1 0>;
                 qcom,bt-vdd-xtal-config = <1700000 2000000 1 0>;
         };
 

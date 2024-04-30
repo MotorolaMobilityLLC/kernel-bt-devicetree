@@ -45,6 +45,23 @@
 			qcom,bt-vdd-rfa2-config   = <1864000 2100000 0 1>;
 
 	};
+
+	slim_msm: slim@3340000 {
+		status =  "ok";
+		ngd@1 {
+			reg = <1>;
+			#address-cells = <1>;
+			#size-cells = <1>;
+			//slimbus child nodes
+			slimbus: btfmslim-driver {
+				compatible = "slim217,221";
+				reg = <1 0>;
+				qcom,btslim-address  = <0x0>; /* BT SLIM EP address*/
+				qcom,btslimtx-channels = <159 160>; /* slimbus FM_Tx, SCO_Tx channels */
+				qcom,btslimrx-channels = <157 158>; /* slimbus SCO_A2DP_Rx A2DP_Rx */
+			};
+		};
+	};
 };
 
 //uart instance
