@@ -45,6 +45,11 @@ ifeq ($(CONFIG_ARCH_VOLCANO), y)
 dtbo-y += volcano-bt.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_ANORAK),y)
+dtbo-y += anorak61-kiwi-bt.dtbo
+dtbo-y += anorak61-hsp-bt.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
