@@ -86,13 +86,6 @@
 	};
 };
 
-&swr4 {
-	btswr_slave: btswr-slave {
-		compatible = "qcom,btfmswr_slave";
-		reg = <0x02 0x08170220>;
-	};
-};
-
 // FM changes
 &qupv3_se5_i2c {
     status = "ok";
