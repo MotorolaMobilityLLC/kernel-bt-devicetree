@@ -1,3 +1,9 @@
+ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
+
+dtbo-$(CONFIG_LEAP_DTB) += sun-peach-bt-leap-evb.dtbo
+
+else
+
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
 endif
@@ -15,6 +21,7 @@ dtbo-y += sun-kiwi-bt-v8.dtbo
 dtbo-y += sun-wcn786x-v8.dtbo
 dtbo-y += sunp-hdk-peach-bt-v8.dtbo
 endif
+endif  # end of CONFIG_MMI_DEVICE_DTBS
 
 ifeq ($(CONFIG_ARCH_RAVELIN), y)
 dtbo-y += ravelin-bt.dtbo
