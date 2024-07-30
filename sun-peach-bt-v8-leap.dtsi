@@ -93,7 +93,7 @@
 };
 
 // FM changes
-&qupv3_se5_i2c {
+/*&qupv3_se5_i2c {
     status = "ok";
 	fm_rtc6226: nq@64 {
 		compatible = "rtc6226";
@@ -105,7 +105,7 @@
 		vio-supply = <&L15B>;
 		rtc6226,vio-supply-voltage = <1800000 1800000>;
 	};
-};
+};*/
 
 //uart instance
 &qupv3_se14_4uart {
