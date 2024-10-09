@@ -50,6 +50,13 @@
 	};
 };
 
+&swr3 {
+	btswr_slave: btswr-slave {
+		compatible = "qcom,btfmswr_slave";
+		reg = <0x01 0x08170220>;
+	};
+};
+
 //uart instance
 &qupv3_se11_4uart {
 	status = "ok";
