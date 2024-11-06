@@ -43,6 +43,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO), y)
 dtbo-y += volcano-bt.dtbo
+dtbo-y += volcano-wcn6450-bt.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_ANORAK),y)
