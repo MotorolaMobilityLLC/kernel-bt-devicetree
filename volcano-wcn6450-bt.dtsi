@@ -37,7 +37,7 @@
 		qcom,bt-vdd-rfa-0p8-config = <920000 1040000 0 1>;
 		qcom,bt-vdd-rfa1-config = <1856000 2080000 0 1>;
 		qcom,bt-vdd-rfa2-config = <1256000 1408000 0 1>;
-		qcom,bt-vdd-pa-config = <3300000 3304000 0 1>;
+		qcom,bt-vdd-pa-config = <3125000 3125000 0 1>;
 
 		qcom,pdc_init_table =
 			" {class: wlan_pdc, ss: rf, res: s3b.v, dwnval: 920}",
