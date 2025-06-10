@@ -42,6 +42,9 @@ ifeq ($(CONFIG_PORTOV_DTB),y)
 dtbo-y += parrot-portov-bt.dtbo
 endif
 
+ifeq ($(CONFIG_MUMBA_DTB),y)
+dtbo-y += parrot-mumba-bt.dtbo
+endif
 
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
