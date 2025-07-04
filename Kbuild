@@ -5,6 +5,7 @@ endif
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_VANTG_DTB) += canoe-peach-bt-vantg-evb.dtbo
+dtbo-$(CONFIG_BLANC_DTB) += canoe-peach-bt-blanc-evb.dtbo
 
 else
 ifeq ($(CONFIG_ARCH_CANOE), y)
