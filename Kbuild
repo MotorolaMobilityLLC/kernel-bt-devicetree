@@ -1,6 +1,7 @@
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_LEAP_DTB) += sun-peach-bt-leap-evb.dtbo
+dtbo-$(CONFIG_LHOTSE_DTB) += sun-peach-bt-lhotse-evt.dtbo
 
 else
 
