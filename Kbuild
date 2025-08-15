@@ -1,6 +1,7 @@
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_LEAP_DTB) += sun-peach-bt-leap-evb.dtbo
+dtbo-$(CONFIG_LHOTSE_DTB) += sun-peach-bt-lhotse-evt.dtbo
 dtbo-$(CONFIG_ROADSTR_DTB) += kera-bt-roadstr-evb.dtbo
 dtbo-$(CONFIG_QOGIR_DTB) += kera-wcn7750-bt-qogir-evb.dtbo
 
