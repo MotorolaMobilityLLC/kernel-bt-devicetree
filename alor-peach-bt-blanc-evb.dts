@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * Copyright (c) 2025 Motorola Mobility LLC. All rights reserved.
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include "alor-peach-bt-blanc.dtsi"
+
+/ {
+	model = "blanc";
+	compatible = "qcom,alor-atp", "qcom,alor", "qcom,atp", "qcom,alor-mtp", "qcom,mtp",
+		     "qcom,alor-rcm", "qcom,rcm", "qcom,alor-qrd", "qcom,qrd";
+	qcom,msm-id = <685 0x10000>;
+	qcom,board-id = <0x41 0x9100>;
+};
