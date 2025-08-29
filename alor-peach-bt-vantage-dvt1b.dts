@@ -6,6 +6,7 @@
 /dts-v1/;
 /plugin/;
 
+#include "alor-peach-bt.dtsi"
 #include "alor-peach-bt-vantage.dtsi"
 
 / {
