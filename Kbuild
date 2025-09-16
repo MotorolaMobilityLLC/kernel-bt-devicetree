@@ -9,6 +9,7 @@ dtbo-$(CONFIG_CTWOV_DTB) += pineapple-kiwi-bt-ctwov-evb.dtbo
 
 dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-bt-arcfox-evt3.dtbo
 dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-bt-ctwo-evb3.dtbo
+dtbo-$(CONFIG_EIGER_DTB) += cliffs-kiwi-bt-eiger-evt.dtbo
 
 dtbo-$(CONFIG_MARVEL_DTB) += volcano-wcn6450-bt-marvel-evb.dtbo
 
