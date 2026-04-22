@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include "alor-wcn7750-bt.dtsi"
+
+/ {
+	model = "eletre`";
+	compatible = "qcom,alor-cdp", "qcom,cdp", "qcom,alor-mtp", "qcom,alor", "qcom,mtp",
+		     "qcom,alor-rcm", "qcom,rcm", "qcom,alor-qrd", "qcom,qrd";
+	qcom,msm-id = <685 0x10000>, <727 0x10000>;
+	qcom,board-id = <0x4A 0x9000>;
+};

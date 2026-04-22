@@ -9,6 +9,7 @@ dtbo-$(CONFIG_BLANC_DTB) += alor-peach-bt-blanc-evb.dtbo
 dtbo-$(CONFIG_MAKALU_DTB) += alor-peach-bt-makalu-evb.dtbo
 dtbo-$(CONFIG_VANTAGE_DTB) += alor-peach-bt-vantage-dvt1b.dtbo
 dtbo-$(CONFIG_AVR_DTB) += alor-wcn7750-bt-avr-evb.dtbo 
+dtbo-$(CONFIG_ELETRE_DTB) += alor-wcn7750-bt-eletre-evb.dtbo 
 
 else
 ifeq ($(CONFIG_ARCH_CANOE), y)
